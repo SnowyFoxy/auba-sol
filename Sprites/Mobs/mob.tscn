@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcvuis0i7j7up"]
+
+[ext_resource type="SpriteFrames" uid="uid://dwd5407ahjctq" path="res://Sprites/Mobs/Mob Sprite Frames.tres" id="1_sov5p"]
+[ext_resource type="Script" uid="uid://cktml4l1rxhn3" path="res://Scripts/Mob.cs" id="1_tncfa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tncfa"]
+size = Vector2(384, 384)
+
+[node name="Mob" type="RigidBody2D"]
+collision_mask = 0
+script = ExtResource("1_tncfa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+sprite_frames = ExtResource("1_sov5p")
+animation = &"Move Right"
+frame_progress = 0.025821555
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tncfa")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

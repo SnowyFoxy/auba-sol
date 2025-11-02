@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://dwd5407ahjctq"]
+
+[ext_resource type="Texture2D" uid="uid://hsy7v51iuj0s" path="res://Sprites/Mobs/Placeholder Mob.png" id="1_f6cje"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmrqn"]
+atlas = ExtResource("1_f6cje")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uomju"]
+atlas = ExtResource("1_f6cje")
+region = Rect2(0, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4vts"]
+atlas = ExtResource("1_f6cje")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00ayd"]
+atlas = ExtResource("1_f6cje")
+region = Rect2(0, 0, 512, 512)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmrqn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uomju")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4vts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00ayd")
+}],
+"loop": true,
+"name": &"Move Right",
+"speed": 2.0
+}]
