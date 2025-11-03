@@ -999,6 +999,7 @@ terrain_set_3/mode = 0
 sources/0 = SubResource("TileSetAtlasSource_ups8e")
 
 [node name="Side World" type="Node2D"]
+scale = Vector2(2, 2)
 metadata/_edit_group_ = true
 
 [node name="Walls" type="TileMapLayer" parent="."]
